@@ -104,7 +104,7 @@ if uploaded_file is not None:
         st.pyplot(fig)
 
         # most common word
-        st.title('MOst Common Word')
+        st.title('Most Common Word')
         common_word_df= helper.most_common_word(selected_user, df)
         fig, ax= plt.subplots()
         ax.barh(common_word_df[0], common_word_df[1])
